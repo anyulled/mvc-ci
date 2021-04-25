@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/anyulled/mvc-ci/branch/master-ci/graph/badge.svg?token=BVRdPBCHd8)](https://codecov.io/gh/anyulled/mvc-ci)
+
 # MVC - basics
 
 In this exercise we will implement a simple PHP application following the MVC pattern.
