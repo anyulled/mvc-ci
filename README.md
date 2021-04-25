@@ -1,3 +1,4 @@
+[![PHP Composer](https://github.com/anyulled/mvc-ci/actions/workflows/php.yml/badge.svg)](https://github.com/anyulled/mvc-ci/actions/workflows/php.yml)
 [![codecov](https://codecov.io/gh/anyulled/mvc-ci/branch/master-ci/graph/badge.svg?token=BVRdPBCHd8)](https://codecov.io/gh/anyulled/mvc-ci)
 
 # MVC - basics
