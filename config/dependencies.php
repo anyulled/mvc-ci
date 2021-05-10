@@ -25,7 +25,7 @@ function addDependencies(ContainerInterface $container): void {
         function () {
             $pdoSingleton = PDOSingleton::getInstance(
                 $_ENV['MYSQL_USER'],
-                $_ENV['MYSQL_ROOT_PASSWORD'],
+                $_ENV['MYSQL_PASSWORD'],
                 $_ENV['MYSQL_HOST'],
                 $_ENV['MYSQL_PORT'],
                 $_ENV['MYSQL_DATABASE']);
