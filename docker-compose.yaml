@@ -32,6 +32,8 @@ services:
     restart: unless-stopped
     ports:
       - "3330:3306"
+    volumes:
+      - ./init/mysql.sql:/docker-entrypoint-initdb.d/mysql.sql:ro
     env_file:
       - .env
 
