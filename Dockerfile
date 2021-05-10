@@ -10,3 +10,13 @@ RUN apk --update upgrade \
     && apk del .phpize-deps
 
 COPY etc/php/ /usr/local/etc/php/
+
+COPY composer.json .
+COPY composer.lock .
+
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+CMD composer install --no-scripts --no-autoloader \
+    && composer dump-autoload \
+    && docker-php-entrypoint php-fpm
